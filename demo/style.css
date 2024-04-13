@@ -3,6 +3,21 @@ body {
     padding: 20px;
     font-family: Arial;
 }
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 60px;
+}
+
+a {
+    margin: 5px;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
