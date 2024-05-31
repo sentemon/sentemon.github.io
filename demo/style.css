@@ -1,49 +1,25 @@
+body {
+    background-color: black;
+}
+
 a {
     margin: 5px;
-}
-.full-screen {
-    position: relative;
-    min-height:  100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 15;
-}
-.full-screen__body {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex: 2 1 auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .full-screen__title {
     color: white;
     font-size: 50px;
-    margin-bottom: 20px;
     font-weight: 700;
-    margin: 0px 0px 20px 0px;
+    text-align: center
 }
 
 .full-screen__text {
     color: white;
     font-size: 20px;
-    margin-bottom: 20px;
     font-weight: 400;
-    margin: 60px;
     text-align: center
 
-}
-.full-screen__video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 100vh;
-    object-fit: cover;
-    z-index: 0; 
-}
+} 
 
 .sidebar {
     position: fixed;
