@@ -1,35 +1,99 @@
 body {
-    background-color: black;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-a {
-    margin: 5px;
+.full-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
 }
 
-.full-screen__title {
-    color: white;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center
+.full-screen__body {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
 }
 
-.full-screen__text {
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center
+.full-screen__title h1 {
+    font-size: 48px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
 
-} 
+.full-screen__text p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-top: 0;
+}
 
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 82%;
     left: 0;
-    height: 100%;
-    width: 70px;
-    background-color: rgb(169, 169, 169);
+    transform: translateY(-50%);
+    width: 80px;
+    background-color: #292d2f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
-  }
+    padding: 10px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    margin: 10px 0;
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+svg {
+    fill: #ffffff;
+}
+
+.twitter-x path {
+    fill: #1da1f2;
+}
+
+.bi-discord path {
+    fill: #7289da;
+}
+
+.bi-instagram path {
+    fill: #e1306c;
+}
+
+a:hover .twitter-x path {
+    fill: #0d95e8;
+}
+
+a:hover .bi-discord path {
+    fill: #5a74aa;
+}
+
+a:hover .bi-instagram path {
+    fill: #bc2a8d;
+}
+
+a:hover svg {
+    fill: #f8f9fa;
+}
+
+.sidebar a:last-child svg path {
+    fill: #ffffff;
+}
+
+.sidebar a:last-child:hover svg path {
+    fill: #cccccc;
+}
